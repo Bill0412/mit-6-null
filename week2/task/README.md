@@ -94,3 +94,7 @@ From `tldr`:
 ```console
 $ find . -name "*.html" -print0 | xargs -0 zip -9 htmls.zip
 ```
+
+5. (Advanced) Write a command or script to recursively find the most recently modified file in a directory. More generally, can you list all files by recency?
+
+TODO(Maybe in the far future)
