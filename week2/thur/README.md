@@ -1,0 +1,1 @@
+I hang out with friend today.
