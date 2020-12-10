@@ -57,7 +57,9 @@ backward in current line.
 
 #### Modifiers
 - `ci[`: change inside brackets
+- `ca[`: change including brackets
 - `di(`: delete the contents inside the parentheses
+- `da(`: delete including the parentheses
 
 ### Visual Mode
 To enter visual mode

@@ -1,0 +1,1 @@
+Today I tried vim on macOS. It's a bunch of shit! It does not parse Python by default! I tried to replace it, but failed.
