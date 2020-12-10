@@ -55,11 +55,18 @@ backward in current line.
 - `yw`: copy a single word
 - `p`: paste
 
+#### Modifiers
+- `ci[`: change inside brackets
+- `di(`: delete the contents inside the parentheses
+
 ### Visual Mode
 To enter visual mode
 - `v`: visual
 - `Shift-V`: visual line, select by line
 - `Ctrl-V`: block visual mode. select by block
+- `<number>operation`
+    - `3e`: selects 3 words by the end of them
+    - `8j`: goes down by 8 lines
 
 ### Commands
 
