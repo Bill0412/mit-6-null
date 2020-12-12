@@ -1,5 +1,6 @@
 1. Complete `vimtutor`. Note: it looks best in a 80x24 (80 columns by 24 lines) terminal window.
 
+- The finished task is available at [TEST](./TEST).
 
 For lesson 4.4, firstly find out the line by using, and then replace for the whole line.
 ```
