@@ -36,3 +36,28 @@ Done
 
 
 4. To practice using Vim, re-do the Demo from lecture on your own machine.
+
+Here is a broken fizz buzz implementation:
+```python
+def fizz_buzz(limit):
+    for i in range(limit):
+        if i % 3 == 0:
+            print('fizz')
+        if i % 5 == 0:
+            print('fizz')
+        if i % 3 and i % 5:
+            print(i)
+
+def main():
+    fizz_buzz(10)
+```
+
+We will fix the following issues:
+
+- Main is never called
+- Starts at 0 instead of 1
+- Prints “fizz” and “buzz” on separate lines for multiples of 15
+- Prints “fizz” for multiples of 5
+- Uses a hard-coded argument of 10 instead of taking a command-line argument
+
+See the lecture video for the demonstration. Compare how the above changes are made using Vim to how you might make the same edits using another program. Notice how very few keystrokes are required in Vim, allowing you to edit at the speed you think.
