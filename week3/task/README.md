@@ -74,3 +74,8 @@ I will! Vim is powerful!
 7. Further customize your ~/.vimrc and install more plugins.
 
 I will try later as I get deeper.
+
+
+8. (Advanced) Convert XML to JSON (example file) using Vim macros. Try to do this on your own, but you can look at the macros section above if you get stuck.
+
+I will try later. Since I am quite busy this week.
