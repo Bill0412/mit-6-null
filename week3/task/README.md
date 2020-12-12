@@ -66,3 +66,10 @@ See the lecture video for the demonstration. Compare how the above changes are m
 
 I will!
 
+6. Configure your other tools to use Vim bindings (see instructions above).
+ 
+I will! Vim is powerful!
+
+7. Further customize your ~/.vimrc and install more plugins.
+
+I will try later as I get deeper.
