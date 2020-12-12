@@ -1,0 +1,1 @@
+Today I downloaded the vimrc file from the course website. And I learned that to enable Python highlighting `syntax on` option is crucial.
