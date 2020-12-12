@@ -61,3 +61,8 @@ We will fix the following issues:
 - Uses a hard-coded argument of 10 instead of taking a command-line argument
 
 See the lecture video for the demonstration. Compare how the above changes are made using Vim to how you might make the same edits using another program. Notice how very few keystrokes are required in Vim, allowing you to edit at the speed you think.
+
+5. Use Vim for all your text editing for the next month. Whenever something seems inefficient, or when you think “there must be a better way”, try Googling it, there probably is. If you get stuck, come to office hours or send us an email.
+
+I will!
+
