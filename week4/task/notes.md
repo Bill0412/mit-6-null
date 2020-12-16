@@ -55,6 +55,12 @@ user fenghe 192.168.2.231 port 59209
 user fenghe 192.168.2.231 port 59907
 ```
 
+cat ssh.log | sed 's/.*Disconnected from //' | head -n 5
+user fenghe 10.181.150.39 port 51518
+user fenghe 10.190.66.94 port 62265
+user fenghe 10.190.64.242 port 60504
+user fenghe 192.168.2.231 port 55468
+user fenghe 192.168.2.231 port 55493
 
 ## Regular Expressions
 - `.`: means "any single character" except newline
@@ -64,3 +70,20 @@ user fenghe 192.168.2.231 port 59907
 - `(RX1|RX2)`: either something that matches `RX1` or `RX2`
 - `^`: the start of the line
 - `&`: the end of the line
+
+### `g`
+Regular expressions by default only match once, to match globally, add the g option.
+```console
+$ # replace a or be with nothing
+$ echo 'aba' | sed 's/[ab]//' 
+ba
+$ # repalce a or be with nothing(gloabally)
+$ echo 'aba' | sed 's/[ab]//g'
+(nothing)
+$ echo 'abac' | sed 's/[ab]//g'
+c
+$ echo 'abcaba' | sed 's/\(ab\)*//g'
+ca
+$ # equivalent to(a new syntax without )
+$ echo 'abcaba' | sed -E 's/(ab)*//g'
+```
