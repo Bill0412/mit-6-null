@@ -40,7 +40,7 @@ $ ssh fenghe 'journalctl | grep sshd | grep "Disconnected from"' > ssh.log
 ```
 ## `sed`
 - `sed`: stream editor
-- `s/REGEX/SUBSTITUTION`
+- `s/REGEX/SUBSTITUTION/`
 
 ```console
 $ ssh fenghe journalctl | grep sshd | grep "Disconnected from" | sed "s/.*Disconnected from //"
@@ -87,3 +87,19 @@ ca
 $ # equivalent to(a new syntax without )
 $ echo 'abcaba' | sed -E 's/(ab)*//g'
 ```
+
+### Capture group
+
+Anything inside parentheses is a capturing group.
+
+```console
+$ cat ssh.log | sed -E 's/^.*Disconnected from (invalid | anthenticating)?user (.*) [0-9.]+ port [0-9]+$/\2/' | head -n 5
+fenghe
+fenghe
+fenghe
+fenghe
+fenghe
+```
+This captures the contents in the frist capture group and by using `\1` i the substitution part replaces the lines with the content in the capturing group.
+
+
