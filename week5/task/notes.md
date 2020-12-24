@@ -101,3 +101,53 @@ Inside `tmux`
 - `<Ctrl-b> x`: Kills the current pane
 - `<Ctrl-b> [`: Start scrollback
 - `<Ctrl-b> <space>`: Cycle throught pane arrangements
+
+## Aliases
+```console
+alias alias_name="command_to_alias arg1 arg2"
+```
+
+```console
+# Make shorthands for common flags
+alias ll="ls -lh"
+
+# Save a lot of typing for common commands
+alias gs="git status"
+alias gc="git commit"
+alias v="vim"
+
+# Save you from mistyping
+alias sl=ls
+
+# Overwrite existing commands for better defaults
+alias mv="mv -i"           # -i prompts before overwrite
+alias mkdir="mkdir -p"     # -p make parent dirs as needed
+alias df="df -h"           # -h prints human readable format
+
+# Alias can be composed
+alias la="ls -A"
+alias lla="la -l"
+
+# To ignore an alias run it prepended with \
+\ls
+# Or disable an alias altogether with unalias
+unalias la
+
+# To get an alias definition just call it with alias
+alias ll
+# Will print ll='ls -lh'
+```
+
+## Remote Machines
+### Copy files over SSH
+```console
+$ cat localfile | ssh remote_server tee serverfile
+```
+
+- `ssh+tee`
+- `scp`
+- `rsync`
+
+### Remote Mount via SSH
+- [Mosh](https://mosh.org/): for mobile use, when network environment changes a lot.
+- [sshfs](https://github.com/libfuse/sshfs): mount a remote folder.
