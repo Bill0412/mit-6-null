@@ -100,7 +100,8 @@ Inside `tmux`
 - `<Ctrl-b> z`: Toggle zoom for the current pane
 - `<Ctrl-b> x`: Kills the current pane
 - `<Ctrl-b> [`: Start scrollback
-- `<Ctrl-b> <space>`: Cycle throught pane arrangements
+- `<Ctrl-b> <space>`: Cycle throught pane arrangement
+
 
 ## Aliases
 ```console
