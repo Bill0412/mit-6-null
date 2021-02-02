@@ -64,3 +64,20 @@ So the message is `Fix Travis CI build`
 3. One common mistake when learning Git is to commit large files that should not be managed by Git or adding sensitive information. Try adding a file to a repository, making some commits and then deleting that file from history (you may want to look at this).
 
 skipped
+
+4. Clone some repository from GitHub, and modify one of its existing files. What happens when you do git stash? What do you see when running git log --all --oneline? Run git stash pop to undo what you did with git stash. In what scenario might this be useful?
+
+`git stash` undos all the modifications since the last commit. `git log --all --oneline` shows all the logs but one in a single line. `git stash pop` might be useful when you want to switch between the current work flow and your last commit.
+
+5. Like many command line tools, Git provides a configuration file (or dotfile) called ~/.gitconfig. Create an alias in `~/.gitconfig` so that when you run git graph, you get the output of `git log --all --graph --decorate --oneline`.
+
+I've updated the following to my git config file.
+```
+# in the .gitconfig file
+[alias]
+    graph = log --all --graph --decorate --oneline
+```
+
+6. You can define global ignore patterns in `~/.gitignore_global` after running `git config --global core.excludesfile ~/.gitignore_global`. Do this, and set up your global gitignore file to ignore OS-specific or editor-specific temporary files, like .DS_Store.
+
+7. Fork the repository for the class website, find a typo or some other improvement you can make, and submit a pull request on GitHub.
